@@ -1,0 +1,51 @@
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:task_manager/widgets/tm_appbar.dart';
+
+import '../data/models/task_model.dart';
+import '../data/services/api_caller.dart';
+import '../providers/task_provider.dart';
+import '../utils/urls.dart';
+import '../widgets/task_card.dart';
+
+class CancelTaskScreen extends StatefulWidget {
+  const CancelTaskScreen({super.key});
+
+  @override
+  State<CancelTaskScreen> createState() => _CancelTaskScreenState();
+}
+
+class _CancelTaskScreenState extends State<CancelTaskScreen> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    final provider = Provider.of<TaskProvider>(context, listen: false);
+    provider.fetchTaskByStatus('Cancelled');
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: TmAppbar(),
+      body: Consumer<TaskProvider>(
+        builder: (context, taskProvider, _) {
+          return ListView.separated(
+            itemCount: taskProvider.cancelledTask.length,
+            itemBuilder: (context, index) {
+              return TaskCard(
+                taskModel: taskProvider.cancelledTask[index],
+                cardColor: Colors.red,
+                refreshParent: () {},
+              );
+            },
+            separatorBuilder: (context, index) {
+              return SizedBox(height: 4);
+            },
+          );
+        },
+      ),
+    );
+  }
+}

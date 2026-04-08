@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:task_manager/app.dart';
 import 'package:task_manager/providers/auth_provider.dart';
@@ -19,10 +18,6 @@ void main() {
       child: TaskManagerApp(),
     ),
   );
-}
-
-void main() {
-  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

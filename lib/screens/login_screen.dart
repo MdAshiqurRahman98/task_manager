@@ -1,17 +1,17 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:task_manager/Controller/auth_controller.dart';
-import 'package:task_manager/data/models/user_model.dart';
-import 'package:task_manager/main.dart';
+// import 'package:task_manager/Controller/auth_controller.dart';
+// import 'package:task_manager/data/models/user_model.dart';
+// import 'package:task_manager/main.dart';
 import 'package:task_manager/providers/auth_provider.dart';
 import 'package:task_manager/screens/sign_up_screen.dart';
 import 'package:task_manager/utils/app_colors.dart';
 
-import '../data/models/api_response.dart';
-import '../data/services/api_caller.dart';
-import '../providers/auth_provider.dart';
-import '../utils/urls.dart';
+// import '../data/models/api_response.dart';
+// import '../data/services/api_caller.dart';
+// import '../providers/auth_provider.dart';
+// import '../utils/urls.dart';
 import '../widgets/screen_background.dart';
 import '../widgets/show_snack_bar.dart';
 import 'forget_password_email_verify.dart';

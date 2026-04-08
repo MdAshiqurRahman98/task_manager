@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:task_manager/data/models/api_response.dart';
 import 'package:task_manager/data/services/api_caller.dart';
 import 'package:task_manager/screens/login_screen.dart';
-import 'package:task_manager/screens/sign_up_screen.dart';
+// import 'package:task_manager/screens/sign_up_screen.dart';
 import 'package:task_manager/utils/app_colors.dart';
 
 import '../utils/urls.dart';

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:task_manager/data/models/task_model.dart';
-import 'package:task_manager/main.dart';
+// import 'package:task_manager/main.dart';
 import 'package:task_manager/providers/task_provider.dart';
 import 'package:task_manager/widgets/showSnackBar.dart';
 
-import '../data/services/api_caller.dart';
-import '../utils/urls.dart';
+// import '../data/services/api_caller.dart';
+// import '../utils/urls.dart';
 
 class TaskCard extends StatefulWidget {
   final TaskModel taskModel;

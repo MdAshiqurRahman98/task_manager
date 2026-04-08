@@ -5,7 +5,7 @@ import 'package:task_manager/screens/sign_up_screen.dart';
 import 'package:task_manager/utils/app_colors.dart';
 
 import '../widgets/screen_background.dart';
-import 'forget_password_ptp_verification.dart';
+// import 'forget_password_ptp_verification.dart';
 
 class ForgetPasswordSetPassword extends StatefulWidget {
   const ForgetPasswordSetPassword({super.key});
